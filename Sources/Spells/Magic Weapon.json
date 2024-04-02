@@ -1,0 +1,88 @@
+{
+  "name": "Magic Weapon",
+  "source": "PHB",
+  "page": 257,
+  "srd": true,
+  "basicRules": true,
+  "level": 2,
+  "school": "T",
+  "time": [
+    {
+      "number": 1,
+      "unit": "bonus"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "touch"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "hour",
+        "amount": 1
+      },
+      "concentration": true
+    }
+  ],
+  "entries": [
+    "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls."
+  ],
+  "entriesHigherLevel": [
+    {
+      "type": "entries",
+      "name": "At Higher Levels",
+      "entries": [
+        "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
+      ]
+    }
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Paladin",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ],
+    "classVariant": [
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      }
+    ]
+  }
+}

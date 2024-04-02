@@ -1,0 +1,240 @@
+{
+  "name": "Mage Hand",
+  "source": "PHB",
+  "page": 256,
+  "srd": true,
+  "basicRules": true,
+  "level": 0,
+  "school": "C",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "feet",
+      "amount": 30
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "minute",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.",
+    "You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.",
+    "The hand can't attack, activate magic items, or carry more than 10 pounds."
+  ],
+  "miscTags": [
+    "OBJ"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Bard",
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Warlock",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Elf (High)",
+      "source": "PHB",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Aereni)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Valenar)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Gith (Githyanki)",
+      "source": "MTF",
+      "baseName": "Gith",
+      "baseSource": "MTF"
+    },
+    {
+      "name": "Gith (Githzerai)",
+      "source": "MTF",
+      "baseName": "Gith",
+      "baseSource": "MTF"
+    },
+    {
+      "name": "Tiefling (Mammon)",
+      "source": "MTF",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Mephistopheles)",
+      "source": "MTF",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Gith (Githyanki)",
+      "source": "UAEladrinAndGith",
+      "baseName": "Gith",
+      "baseSource": "UAEladrinAndGith"
+    },
+    {
+      "name": "Gith (Githzerai)",
+      "source": "UAEladrinAndGith",
+      "baseName": "Gith",
+      "baseSource": "UAEladrinAndGith"
+    },
+    {
+      "name": "Githyanki",
+      "source": "MPMM"
+    },
+    {
+      "name": "Githzerai",
+      "source": "MPMM"
+    },
+    {
+      "name": "Kobold",
+      "source": "MPMM"
+    },
+    {
+      "name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+      "source": "SCAG",
+      "baseName": "Half-Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Merfolk (Ixalan; Blue)",
+      "source": "PSX",
+      "baseName": "Merfolk (Ixalan)",
+      "baseSource": "PSX"
+    },
+    {
+      "name": "Merfolk (Zendikar; Cosi Creed)",
+      "source": "PSZ",
+      "baseName": "Merfolk (Zendikar)",
+      "baseSource": "PSZ"
+    },
+    {
+      "name": "Merfolk (Zendikar; Ula Creed)",
+      "source": "PSZ",
+      "baseName": "Merfolk (Zendikar)",
+      "baseSource": "PSZ"
+    },
+    {
+      "name": "Tiefling (Mammon)",
+      "source": "UAFiendishOptions",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Mephistopheles)",
+      "source": "UAFiendishOptions",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    }
+  ],
+  "optionalfeatures": [
+    {
+      "name": "Pact of the Tome",
+      "source": "PHB",
+      "featureType": [
+        "PB"
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "name": "Dimir Operative",
+      "source": "GGR"
+    }
+  ],
+  "feats": [
+    {
+      "name": "Aberrant Dragonmark",
+      "source": "ERLW"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "TCE"
+    },
+    {
+      "name": "Telekinetic",
+      "source": "TCE"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Dragonmark of Detection",
+      "source": "UAEberron"
+    },
+    {
+      "name": "Dragonmark of Finding",
+      "source": "UAEberron"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "UA2022HeroesOfKrynn"
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "PHB"
+    },
+    {
+      "name": "Scion Of The Outer Planes",
+      "source": "UA2022WondersOfTheMultiverse"
+    },
+    {
+      "name": "Strixhaven Initiate",
+      "source": "SCC"
+    },
+    {
+      "name": "Telekinetic",
+      "source": "UA2020PsionicOptionsRevisited"
+    },
+    {
+      "name": "Telekinetic",
+      "source": "UAFighterRogueWizard"
+    }
+  ]
+}

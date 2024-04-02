@@ -1,0 +1,15 @@
+{
+  "name": "+2 Arrow",
+  "source": "DMG",
+  "type": "A",
+  "rarity": "rare",
+  "weight": 0.05,
+  "page": 150,
+  "srd": true,
+  "tier": "minor",
+  "bonusWeapon": "+2",
+  "entries": [
+    "These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, almost alive as they effortlessly leave your bow and streak toward their target with deadly accuracy.",
+    "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+  ]
+}

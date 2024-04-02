@@ -1,0 +1,14 @@
+{
+  "customIndicator": "RML",
+  "name": "Circlet of the Dreaming",
+  "type": "Wondrous Item",
+  "rarity": "Legendary",
+
+  "source": "Homebrew",
+
+  "I0D": "When the two gemstones upon the circlet are rubbed, a portal to a curious dimension within the dreaming will be opened. A space one could easily use to store things if they so wished. The dimension is roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.",
+
+  "I1D": "If the circlet is overloaded, damaged or destroyed, its contents are scattered across the Astral Plane. Breathing creatures inside the dimension can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute, after which time they begin to suffocate.",
+
+  "I2D": "Placing a the circlet inside an extradimensional space created by a Heward's handy haversack, portable hole, bag of holding or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+}

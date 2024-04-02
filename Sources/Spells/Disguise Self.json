@@ -1,0 +1,194 @@
+{
+  "name": "Disguise Self",
+  "source": "PHB",
+  "page": 233,
+  "srd": true,
+  "basicRules": true,
+  "level": 1,
+  "school": "I",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "self"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "hour",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.",
+    "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.",
+    "To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence ({@skill Investigation}) check against your spell save DC."
+  ],
+  "abilityCheck": [
+    "intelligence"
+  ],
+  "miscTags": [
+    "SGT"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Bard",
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Deep Gnome",
+      "source": "MPMM"
+    },
+    {
+      "name": "Firbolg",
+      "source": "MPMM"
+    },
+    {
+      "name": "Elf (Mark of Shadow)",
+      "source": "ERLW",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Firbolg",
+      "source": "VGM"
+    },
+    {
+      "name": "Gnome (Deep)",
+      "source": "DMG"
+    },
+    {
+      "name": "Hexblood",
+      "source": "UA2021GothicLineages"
+    },
+    {
+      "name": "Hexblood",
+      "source": "VRGR"
+    },
+    {
+      "name": "Tiefling (Dispater)",
+      "source": "MTF",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Glasya)",
+      "source": "MTF",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Dispater)",
+      "source": "UAFiendishOptions",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Glasya)",
+      "source": "UAFiendishOptions",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    }
+  ],
+  "optionalfeatures": [
+    {
+      "name": "Mask of Many Faces",
+      "source": "PHB",
+      "featureType": [
+        "EI"
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "name": "Dimir Operative",
+      "source": "GGR"
+    }
+  ],
+  "feats": [
+    {
+      "name": "Aberrant Dragonmark",
+      "source": "ERLW"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "TCE"
+    },
+    {
+      "name": "Shadow Touched",
+      "source": "TCE"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Shadow Touched",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Divinely Favored",
+      "source": "UA2022HeroesOfKrynn"
+    },
+    {
+      "name": "Dragonmark of Shadow",
+      "source": "UAEberron"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "DSotDQ"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "UA2022HeroesOfKrynnRevisited"
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "PHB"
+    },
+    {
+      "name": "Strixhaven Initiate",
+      "source": "SCC"
+    },
+    {
+      "name": "Svirfneblin Magic",
+      "source": "MTF"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Revivify",
+  "source": "PHB",
+  "page": 272,
+  "srd": true,
+  "basicRules": true,
+  "level": 3,
+  "school": "N",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "touch"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": {
+      "text": "diamonds worth 300 gp, which the spell consumes",
+      "cost": 30000,
+      "consume": true
+    }
+  },
+  "duration": [
+    {
+      "type": "instant"
+    }
+  ],
+  "entries": [
+    "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+  ],
+  "miscTags": [
+    "HL"
+  ],
+  "areaTags": [
+    "ST"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Cleric",
+        "source": "PHB"
+      },
+      {
+        "name": "Paladin",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ],
+    "classVariant": [
+      {
+        "name": "Druid",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Druid",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      },
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      }
+    ]
+  }
+}

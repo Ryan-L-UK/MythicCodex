@@ -1,0 +1,169 @@
+{
+  "name": "Minor Illusion",
+  "source": "PHB",
+  "page": 260,
+  "srd": true,
+  "basicRules": true,
+  "level": 0,
+  "school": "I",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "feet",
+      "amount": 30
+    }
+  },
+  "components": {
+    "s": true,
+    "m": "a bit of fleece"
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "minute",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.",
+    "If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.",
+    "If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.",
+    "If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
+  ],
+  "abilityCheck": [
+    "intelligence"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Bard",
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Warlock",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Elf (Eladrin)",
+      "source": "UAEladrinAndGith",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High)",
+      "source": "PHB",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Gnome (Forest)",
+      "source": "PHB",
+      "baseName": "Gnome",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Aereni)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Valenar)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (Mark of Shadow)",
+      "source": "ERLW",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+      "source": "SCAG",
+      "baseName": "Half-Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Kobold",
+      "source": "MPMM"
+    },
+    {
+      "name": "Merfolk (Ixalan; Blue)",
+      "source": "PSX",
+      "baseName": "Merfolk (Ixalan)",
+      "baseSource": "PSX"
+    },
+    {
+      "name": "Merfolk (Zendikar; Cosi Creed)",
+      "source": "PSZ",
+      "baseName": "Merfolk (Zendikar)",
+      "baseSource": "PSZ"
+    },
+    {
+      "name": "Merfolk (Zendikar; Ula Creed)",
+      "source": "PSZ",
+      "baseName": "Merfolk (Zendikar)",
+      "baseSource": "PSZ"
+    },
+    {
+      "name": "Tiefling (Glasya)",
+      "source": "MTF",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Tiefling (Glasya)",
+      "source": "UAFiendishOptions",
+      "baseName": "Tiefling",
+      "baseSource": "PHB"
+    }
+  ],
+  "optionalfeatures": [
+    {
+      "name": "Pact of the Tome",
+      "source": "PHB",
+      "featureType": [
+        "PB"
+      ]
+    }
+  ],
+  "feats": [
+    {
+      "name": "Aberrant Dragonmark",
+      "source": "ERLW"
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "PHB"
+    },
+    {
+      "name": "Scion Of Elemental Air",
+      "source": "UA2022WondersOfTheMultiverse"
+    },
+    {
+      "name": "Scion Of The Outer Planes",
+      "source": "UA2022WondersOfTheMultiverse"
+    }
+  ]
+}

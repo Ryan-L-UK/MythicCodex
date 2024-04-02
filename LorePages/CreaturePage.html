@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../EnchantedForge/CSS/CoreStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/Sources.css" />
+    <title>Heart Of Winter</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../EnchantedForge/Components/favicon.ico"
+    />
+  </head>
+  <body>
+    <!---------------------------------------->
+    <!--Nav Bar-->
+    <!---------------------------------------->
+    <object id="Nav_output"></object>
+    <!---------------------------------------->
+    <!--Content-->
+    <!---------------------------------------->
+    <br />
+    <div class="content-container">
+      <div class="CreatureList-container">
+        <div class="List" id="cTable">
+          <h1 class="listname">
+            Complete list of all Creatures, Monsters & Demons:
+          </h1>
+          <br />
+          <input
+            class="whiteInput"
+            type="text"
+            id="myInput"
+            onkeyup="tableFilter()"
+            placeholder="Search for creature.."
+          />
+          <br />
+        </div>
+        <div class="View">
+          <h1 class="listname">Creature:</h1>
+          <br />
+          <div id="photo">
+            <div class="RainBorder">
+              <div class="CreatureContainer" id="CreatureContainer">
+                <div class="creatureBorder">
+                  <div class="HPAC">
+                    <div class="HP">
+                      <div class="HitPointBox">
+                        <h1 class="hp">HP</h1>
+
+                        <h1 class="hp-out" id="hp-out"></h1>
+                      </div>
+                    </div>
+                    <div class="AC">
+                      <div class="ACBox">
+                        <h1 class="ac">AC</h1>
+                        <h1 class="ac-out" id="ac-out"></h1>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    class="item-decoration corner-left-top"
+                    src="../EnchantedForge/ImageAssets/GeneralImages/CreatureCorner.png"
+                  />
+                  <img
+                    class="item-decoration corner-right-top"
+                    src="../EnchantedForge/ImageAssets/GeneralImages/CreatureCorner.png"
+                  />
+                  <img
+                    class="item-decoration corner-left-bottom"
+                    src="../EnchantedForge/ImageAssets/GeneralImages/CreatureCorner.png"
+                  />
+                  <img
+                    class="item-decoration corner-right-bottom"
+                    src="../EnchantedForge/ImageAssets/GeneralImages/CreatureCorner.png"
+                  />
+                  <h1 class="cName" id="name-out"></h1>
+                  <div class="underline"></div>
+                  <div class="CreatureSub">
+                    <!--These need coloured border boxes-->
+                    <span id="alignment-out"></span>
+                    <span id="size-out" class="CreatureSize"></span>
+                    <span class="CreatureType">
+                      <span id="type-out"></span>
+                      <span id="tags-out" name="clearme"></span
+                    ></span>
+                  </div>
+
+                  <br />
+
+                  <!-------------------------->
+                  <!--IMAGE-->
+                  <!-------------------------->
+                  <div class="bodyContainer">
+                    <img src="" class="CreatureToken" id="CreatureToken" />
+                    <!-------------------------->
+                    <!--SKILLS-->
+                    <!-------------------------->
+                    <h1 class="indexheading">Skills</h1>
+                    <p>
+                      <span class="STR">Str: </span>
+                      <span class="STRn" id="STR-out"></span>,
+                      <span class="DEX">Dex: </span>
+                      <span class="DEXn" id="DEX-out"></span>,
+                      <span class="CON">Con: </span>
+                      <span class="CONn" id="CON-out"></span>,
+                      <span class="INT">Int: </span>
+                      <span class="INTn" id="INT-out"></span>,
+                      <span class="WIS">Wis: </span>
+                      <span class="WISn" id="WIS-out"></span>,
+                      <span class="CHA">Cha: </span>
+                      <span class="CHAn" id="CHA-out"></span>
+                    </p>
+                    <p>
+                      <span
+                        class="creatureBold"
+                        id="skillsH-out"
+                        name="clearme"
+                      ></span>
+                      <span
+                        class="creatureBody capitalize"
+                        id="skills-out"
+                      ></span>
+                    </p>
+                    <p>
+                      <span
+                        class="creatureBold"
+                        id="savesH-out"
+                        name="clearme"
+                      ></span>
+                      <span
+                        class="creatureBody capitalize"
+                        id="saves-out"
+                      ></span>
+                    </p>
+
+                    <p>
+                      <span
+                        class="creatureBold"
+                        id="sensesH-out"
+                        name="clearme"
+                      ></span>
+                      <span
+                        class="creatureBody capitalize"
+                        id="senses-out"
+                      ></span>
+                    </p>
+                    <p>
+                      <span
+                        class="creatureBold"
+                        id="languagesH-out"
+                        name="clearme"
+                      ></span>
+                      <span class="creatureBody" id="languages-out"></span>
+                    </p>
+
+                    <!-------------------------->
+                    <!--TRAITS-->
+                    <!-------------------------->
+                    <div class="hidden" id="TRAITS">
+                      <div class="lineBreak"></div>
+                      <h1 class="indexheading">Traits</h1>
+                      <p>
+                        <span
+                          class="creatureBold"
+                          id="resistH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="resist-out"
+                        ></span>
+                      </p>
+                      <p>
+                        <span
+                          class="creatureBold"
+                          id="immuneH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="immune-out"
+                        ></span>
+                      </p>
+                      <p>
+                        <span
+                          class="creatureBold"
+                          id="vulnerableH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="vulnerable-out"
+                        ></span>
+                      </p>
+                      <p>
+                        <span
+                          class="creatureBold"
+                          id="conditionImmuneH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="conditionImmune-out"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="T0H-out"></span>
+                        <span class="creatureBody" id="T0D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="T1H-out"></span>
+                        <span class="creatureBody" id="T1D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="T2H-out"></span>
+                        <span class="creatureBody" id="T2D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="T3H-out"></span>
+                        <span class="creatureBody" id="T3D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="T4H-out"></span>
+                        <span class="creatureBody" id="T4D-out"></span>
+                      </p>
+                      <p id="innatebreak" class="index">
+                        <span
+                          class="creatureBold"
+                          id="innateHeaderEntryH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody"
+                          id="innateHeaderEntry-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="atWillH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="atWill-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="daily1eH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="daily1e-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="daily2eH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="daily2e-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="daily3eH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="daily3e-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBody"
+                          id="innateFooterEntry-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p id="spellbreak" class="index">
+                        <span
+                          class="creatureBold"
+                          id="spellHeaderEntryH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody"
+                          id="spellHeaderEntry-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="cantripH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="cantrip-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="lvl1slotsH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="lvl1spells-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="lvl2slotsH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="lvl2spells-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="lvl3slotsH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="lvl3spells-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="lvl4slotsH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="lvl4spells-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBodyItalic"
+                          id="lvl5slotsH-out"
+                          name="clearme"
+                        ></span>
+                        <span
+                          class="creatureBody capitalize"
+                          id="lvl5spells-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                      <p class="index">
+                        <span
+                          class="creatureBody"
+                          id="spellFooterEntry-out"
+                          name="clearme"
+                        ></span>
+                      </p>
+                    </div>
+                    <!-------------------------->
+                    <!--ACTIONS-->
+                    <!-------------------------->
+                    <div class="hidden" id="ACTIONS">
+                      <div class="lineBreak"></div>
+                      <h1 class="indexheading">Actions</h1>
+                      <p>
+                        <span class="creatureBold">Speed:</span>
+                        <span class="creatureBody" id="speed-out"></span>
+                      </p>
+
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A0H-out"></span>
+                        <span class="creatureBody" id="A0D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A1H-out"></span>
+                        <span class="creatureBody" id="A1D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A2H-out"></span>
+                        <span class="creatureBody" id="A2D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A3H-out"></span>
+                        <span class="creatureBody" id="A3D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A4H-out"></span>
+                        <span class="creatureBody" id="A4D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A5H-out"></span>
+                        <span class="creatureBody" id="A5D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A6H-out"></span>
+                        <span class="creatureBody" id="A6D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A7H-out"></span>
+                        <span class="creatureBody" id="A7D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="A8H-out"></span>
+                        <span class="creatureBody" id="A8D-out"></span>
+                      </p>
+                    </div>
+                    <!-------------------------->
+                    <!--LEGENDARY-->
+                    <!-------------------------->
+                    <div class="hidden" id="LEGENDARY">
+                      <div class="lineBreak"></div>
+                      <h1 class="indexheading">Legendary Actions</h1>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="LA0H-out"></span>
+                        <span class="creatureBody" id="LA0D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="LA1H-out"></span>
+                        <span class="creatureBody" id="LA1D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="LA2H-out"></span>
+                        <span class="creatureBody" id="LA2D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="LA3H-out"></span>
+                        <span class="creatureBody" id="LA3D-out"></span>
+                      </p>
+                    </div>
+                    <!-------------------------->
+                    <!--REACTIONS-->
+                    <!-------------------------->
+                    <div class="hidden" id="REACTIONS">
+                      <div class="lineBreak"></div>
+                      <h1 class="indexheading">Reactions</h1>
+
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="RA0H-out"></span>
+                        <span class="creatureBody" id="RA0D-out"></span>
+                      </p>
+                      <p class="index">
+                        <span class="creatureBoldItalic" id="RA1H-out"></span>
+                        <span class="creatureBody" id="RA1D-out"></span>
+                      </p>
+                    </div>
+                    <!--CREATURE SOURCE-->
+                    <br />
+                    <br />
+                    <div class="sourcegraphic">
+                      <span
+                        ><div class="source" id="source-out"></div>
+                        <div class="pageno" id="page-out"></div
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+          </div>
+          <div id="output" class="hidden"></div>
+          <div class="options">
+            <span>
+              <button class="submitcreature" onclick="showInput();">View</button
+              ><button class="submitcreature" onclick="takeshot()">Save</button
+              ><button class="submitcreature" onclick="exportSource()">
+                Code
+              </button></span
+            >
+          </div>
+          <br />
+          <br />
+          <form id="creatureform" class="creatureform">
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Basic Details</h1>
+                <br />
+                <input
+                  type="hidden"
+                  id="customIndicator"
+                  name="customIndicator"
+                  value="RML"
+                />
+              </div>
+              <div class="listMiddle">
+                <label>Name:</label>
+                <input type="text" id="name" name="name" />
+                <div class="tri-container">
+                  <div class="col1">
+                    <label>Size:</label>
+                    <input
+                      class="inputlist"
+                      list="Size"
+                      id="size"
+                      name="size"
+                    />
+                    <datalist id="Size">
+                      <option value="Tiny"></option>
+                      <option value="Small"></option>
+                      <option value="Medium"></option>
+                      <option value="Large"></option>
+                      <option value="Huge"></option>
+                      <option value="Gargantuan"></option>
+                    </datalist>
+                  </div>
+                  <div class="col2">
+                    <label>Creature Type:</label>
+                    <input type="text" id="type" name="type" />
+                  </div>
+                  <div class="col3">
+                    <label>Creature Tags:</label>
+                    <input type="text" id="tags" name="tags" />
+                  </div>
+                </div>
+                <div class="tri-container">
+                  <div class="col1">
+                    <label>Alignment:</label>
+                    <input type="text" id="alignment" name="alignment" />
+                  </div>
+                  <div class="col2">
+                    <label>Armour Class:</label>
+                    <input type="text" size="7" id="ac" name="ac" />
+                  </div>
+                  <div class="col3">
+                    <label>Hit Points:</label>
+                    <input type="text" size="7" id="hp" name="hp" />
+                  </div>
+                </div>
+                <label>Speed:</label>
+                <input type="text" id="speed" name="speed" />
+                <div class="split-container">
+                  <div class="twofoursplit">
+                    <label>Page:</label><br />
+                    <input type="number" id="page" name="page" />
+                  </div>
+                  <div class="twofoursplit">
+                    <label>Source:</label>
+                    <input type="text" id="source" name="source" />
+                  </div>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Ability Scores</h1>
+              </div>
+              <div class="listMiddle">
+                <div class="stat-container">
+                  <div class="STR roboto">STR</div>
+                  <div class="DEX roboto">DEX</div>
+                  <div class="CON roboto">CON</div>
+                  <div class="INT roboto">INT</div>
+                  <div class="WIS roboto">WIS</div>
+                  <div class="CHA roboto">CHA</div>
+                  <!--Change Details Here-->
+                  <div class="STRn">
+                    <input type="text" size="7" id="STR" name="STR" />
+                  </div>
+                  <div class="DEXn">
+                    <input type="text" size="7" id="DEX" name="DEX" />
+                  </div>
+                  <div class="CONn">
+                    <input type="text" size="7" id="CON" name="CON" />
+                  </div>
+                  <div class="INTn">
+                    <input type="text" size="7" id="INT" name="INT" />
+                  </div>
+                  <div class="WISn">
+                    <input type="text" size="7" id="WIS" name="WIS" />
+                  </div>
+                  <div class="CHAn">
+                    <input type="text" size="7" id="CHA" name="CHA" />
+                  </div>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Properties</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Saving Throws:</label>
+                    <input type="text" id="saves" name="saves" />
+                    <br />
+                    <label>Skills:</label>
+                    <input type="text" id="skills" name="skills" />
+                    <br />
+                    <label>Damage Resistances:</label>
+                    <input type="text" id="resist" name="resist" />
+                    <br />
+                    <label>Damage Immunities:</label>
+                    <input type="text" id="immune" name="immune" />
+                    <br />
+                    <label>Damage Vulnerabilities:</label>
+                    <input type="text" id="vulnerable" name="vulnerable" />
+                    <br />
+                    <label>Condition Immunities:</label>
+                    <input
+                      type="text"
+                      id="conditionImmune"
+                      name="conditionImmune"
+                    />
+                    <br />
+                    <label>Senses:</label>
+                    <input type="text" id="senses" name="senses" />
+                    <br />
+                    <label>Languages:</label>
+                    <input type="text" id="languages" name="languages" />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Traits</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Trait 0 Name:</label>
+                    <input type="text" id="T0H" name="T0H" /><br />
+                    <label>Trait 0 Action:</label>
+                    <textarea id="T0D" name="T0D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Trait 1 Name:</label>
+                    <input type="text" id="T1H" name="T1H" /><br />
+                    <label>Trait 1 Action:</label>
+                    <textarea id="T1D" name="T1D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Trait 2 Name:</label>
+                    <input type="text" id="T2H" name="T2H" /><br />
+                    <label>Trait 2 Action:</label>
+                    <textarea id="T2D" name="T2D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Trait 3 Name:</label>
+                    <input type="text" id="T3H" name="T3H" /><br />
+                    <label>Trait 3 Action:</label>
+                    <textarea id="T3D" name="T3D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Trait 4 Name:</label>
+                    <input type="text" id="T4H" name="T4H" /><br />
+                    <label>Trait 4 Action:</label>
+                    <textarea id="T4D" name="T4D" cols="56" rows="3"></textarea
+                    ><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Actions</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Attack 0 Name:</label>
+                    <input type="text" id="A0H" name="A0H" /><br />
+                    <label>Attack 0 Action:</label>
+                    <textarea id="A0D" name="A0D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 1 Name:</label>
+                    <input type="text" id="A1H" name="A1H" /><br />
+                    <label>Attack 1 Action:</label>
+                    <textarea id="A1D" name="A1D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 2 Name:</label>
+                    <input type="text" id="A2H" name="A2H" /><br />
+                    <label>Attack 2 Action:</label>
+                    <textarea id="A2D" name="A2D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 3 Name:</label>
+                    <input type="text" id="A3H" name="A3H" /><br />
+                    <label>Attack 3 Action:</label>
+                    <textarea id="A3D" name="A3D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 4 Name:</label>
+                    <input type="text" id="A4H" name="A4H" /><br />
+                    <label>Attack 4 Action:</label>
+                    <textarea id="A4D" name="A4D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 5 Name:</label>
+                    <input type="text" id="A5H" name="A5H" /><br />
+                    <label>Attack 5 Action:</label>
+                    <textarea id="A5D" name="A5D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 6 Name:</label>
+                    <input type="text" id="A6H" name="A6H" /><br />
+                    <label>Attack 6 Action:</label>
+                    <textarea id="A6D" name="A6D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 7 Name:</label>
+                    <input type="text" id="A7H" name="A7H" /><br />
+                    <label>Attack 7 Action:</label>
+                    <textarea id="A7D" name="A7D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Attack 8 Name:</label>
+                    <input type="text" id="A8H" name="A8H" /><br />
+                    <label>Attack 8 Action:</label>
+                    <textarea id="A8D" name="A8D" cols="56" rows="3"></textarea
+                    ><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Spell Caster</h1>
+              </div>
+              <div class="listMiddle">
+                <p>
+                  <label>Spellcaster/Innate:</label>
+                  <input
+                    class="inputlist"
+                    list="casterInnate"
+                    id="CasterInnate"
+                    name="CasterInnate"
+                  />
+                  <datalist id="casterInnate">
+                    <option value="Spellcaster/Innate"></option>
+                    <option value="Spellcaster"></option>
+                    <option value="Innate"></option>
+                  </datalist>
+                </p>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Innate Spells</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <label>Spellcaster Info:</label>
+                  <textarea
+                    id="innateHeaderEntry"
+                    name="innateHeaderEntry"
+                    cols="56"
+                    rows="3"
+                  ></textarea>
+                  <p>
+                    <label>Cast At Will:</label>
+                    <input type="text" id="atWill" name="atWill" />
+                  </p>
+                  <p>
+                    <label>1 Per Day:</label>
+                    <input type="text" id="daily1e" name="daily1e" />
+                  </p>
+                  <p>
+                    <label>2 Per Day:</label>
+                    <input type="text" id="daily2e" name="daily2e" />
+                  </p>
+                  <p>
+                    <label>3 Per Day:</label>
+                    <input type="text" id="daily3e" name="daily3e" />
+                  </p>
+                  <p>
+                    <label>Extra Info:</label>
+                    <input
+                      type="text"
+                      id="innateFooterEntry"
+                      name="innateFooterEntry"
+                    /><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Spell Slots</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <label>Spellcaster Info:</label>
+                  <textarea
+                    id="spellHeaderEntry"
+                    name="spellHeaderEntry"
+                    cols="56"
+                    rows="3"
+                  ></textarea>
+                  <p>
+                    <label>Cantrips:</label>
+                    <input type="text" id="cantrip" name="cantrip" />
+                  </p>
+                  <div class="split-container">
+                    <div class="twofoursplit">
+                      <label>1st Level Spell Slots.</label><br />
+                      <input
+                        type="number"
+                        id="lvl1slots"
+                        name="lvl1slots"
+                        min="0"
+                        max="10"
+                        value="0"
+                      />
+                    </div>
+                    <div class="twofoursplit">
+                      <label>Spells:</label><br />
+                      <input type="text" id="lvl1spells" name="lvl1spells" />
+                    </div>
+                  </div>
+                  <div class="split-container">
+                    <div class="twofoursplit">
+                      <label>2nd Level Spell Slots.</label><br />
+                      <input
+                        type="number"
+                        id="lvl2slots"
+                        name="lvl2slots"
+                        min="0"
+                        max="10"
+                        value="0"
+                      />
+                    </div>
+                    <div class="twofoursplit">
+                      <label>Spells:</label><br />
+                      <input type="text" id="lvl2spells" name="lvl2spells" />
+                    </div>
+                  </div>
+                  <div class="split-container">
+                    <div class="twofoursplit">
+                      <label>3rd Level Spell Slots.</label><br />
+                      <input
+                        type="number"
+                        id="lvl3slots"
+                        name="lvl3slots"
+                        min="0"
+                        max="10"
+                        value="0"
+                      />
+                    </div>
+                    <div class="twofoursplit">
+                      <label>Spells:</label><br />
+                      <input type="text" id="lvl3spells" name="lvl3spells" />
+                    </div>
+                  </div>
+                  <div class="split-container">
+                    <div class="twofoursplit">
+                      <label>4th Level Spell Slots.</label><br />
+                      <input
+                        type="number"
+                        id="lvl4slots"
+                        name="lvl4slots"
+                        min="0"
+                        max="10"
+                        value="0"
+                      />
+                    </div>
+                    <div class="twofoursplit">
+                      <label>Spells:</label><br />
+                      <input type="text" id="lvl4spells" name="lvl4spells" />
+                    </div>
+                  </div>
+                  <div class="split-container">
+                    <div class="twofoursplit">
+                      <label>5th Level Spell Slots.</label><br />
+                      <input
+                        type="number"
+                        id="lvl5slots"
+                        name="lvl5slots"
+                        min="0"
+                        max="10"
+                        value="0"
+                      />
+                    </div>
+                    <div class="twofoursplit">
+                      <label>Spells:</label><br />
+                      <input type="text" id="lvl5spells" name="lvl5spells" />
+                    </div>
+                  </div>
+                  <p>
+                    <label>Extra Info:</label>
+                    <input
+                      type="text"
+                      id="spellFooterEntry"
+                      name="spellFooterEntry"
+                    /><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Reactions</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Reaction 0 Name:</label>
+                    <input type="text" id="RA0H" name="RA0H" /><br />
+                    <label>Reaction 0 Action:</label>
+                    <textarea
+                      id="RA0D"
+                      name="RA0D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                    <label>Reaction 1 Name:</label>
+                    <input type="text" id="RA1H" name="RA1H" /><br />
+                    <label>Reaction 1 Action:</label>
+                    <textarea
+                      id="RA1D"
+                      name="RA1D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">
+                  Legendary Actions
+                </button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Legendary Actions 0 Name:</label>
+                    <input type="text" id="LA0H" name="LA0H" /><br />
+                    <label>Legendary Actions 0 Action:</label>
+                    <textarea
+                      id="LA0D"
+                      name="LA0D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                    <label>Legendary Actions 1 Name:</label>
+                    <input type="text" id="LA1H" name="LA1H" /><br />
+                    <label>Legendary Actions 1 Action:</label>
+                    <textarea
+                      id="LA1D"
+                      name="LA1D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                    <label>Legendary Actions 2 Name:</label>
+                    <input type="text" id="LA2H" name="LA2H" /><br />
+                    <label>Legendary Actions 2 Action:</label>
+                    <textarea
+                      id="LA2D"
+                      name="LA2D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                    <label>Legendary Actions 3 Name:</label>
+                    <input type="text" id="LA3H" name="LA3H" /><br />
+                    <label>Legendary Actions 3 Action:</label>
+                    <textarea
+                      id="LA3D"
+                      name="LA3D"
+                      cols="56"
+                      rows="3"
+                    ></textarea
+                    ><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+          </form>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <object id="Ftr_output"></object>
+    <!--END-->
+  </body>
+</html>
+<script src="../EnchantedForge/JavaScript/CoreScripts.js"></script>
+<script src="../EnchantedForge/JavaScript/Creature_Builder.js"></script>
+<script src="../EnchantedForge/JavaScript/Creature_ETL.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<!-- Your HTML remains the same -->

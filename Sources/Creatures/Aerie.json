@@ -1,0 +1,25 @@
+{
+  "customIndicator": "RML",
+  "name": "Aerie",
+  "size": "Medium",
+  "type": "Avariel",
+  "alignment": "Lawful Good",
+  "ac": "12",
+  "hp": "35",
+  "speed": "30ft",
+  "STR": "10",
+  "DEX": "17",
+  "CON": "9",
+  "INT": "16",
+  "WIS": "16",
+  "CHA": "14",
+  "source": "Hmbrw",
+  "languages": "Common, Elvish",
+
+  "A1H": "Quaterstaff",
+  "A1D": "Melee Weapon Attack: +2 to hit, reach 5ft., one target. Hit 3 (1d6) bludgeoning damage.",
+  "A2H": "Mace",
+  "A2D": "Melee Weapon Attack: +2 to hit, reach 5ft., one target. Hit 3 (1d6) bludgeoning damage.",
+  "A3H": "Sling",
+  "A3D": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 3 (1d4 + 2) piercing damage."
+}

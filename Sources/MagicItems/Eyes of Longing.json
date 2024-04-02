@@ -1,0 +1,14 @@
+{
+  "customIndicator": "RML",
+  "name": "Eyes of Longing",
+  "type": "Wondrous Item",
+  "rarity": "Legendary",
+
+  "source": "Homebrew",
+
+  "I0D": "These two eyes belonging to a god, have been carved out and each preserved inside a jar in a curious liquid, it is unclear what the intention was.",
+
+  "I1D": "While both eyes are on the same plane of existence, these giant eyeballs eyes will always turn to look in the direction of the other, regardless of distance. If the eyes are on different planes existence they will spin around randomly.",
+
+  "I2D": "If at any point one of the eyes is destroyed, or the jar containing them is broken both eyes become non-magical."
+}

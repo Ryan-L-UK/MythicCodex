@@ -1,0 +1,14 @@
+{
+  "name": "Crossbow Bolt",
+  "source": "PHB",
+  "page": 150,
+  "srd": true,
+  "basicRules": true,
+  "type": "A",
+  "rarity": "none",
+  "weight": 0.075,
+  "value": 5,
+  "entries": [
+    "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size."
+  ]
+}

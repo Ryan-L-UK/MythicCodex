@@ -1,0 +1,12 @@
+{
+  "customIndicator": "RML",
+  "name": "Compass of Alignment",
+  "type": "Wondrous Item",
+  "rarity": "Very Rare",
+
+  "source": "Homebrew",
+
+  "I0D": "The wooden compass has no markings or bearings upon it. Instead it lists various moral alignments around its edge.",
+  "I1H": "",
+  "I1D": "When a user holds the compass, the needle will point to their true alignment. A creature can attempt to deceive the compass but they will need to beat a DC20 Deception check."
+}

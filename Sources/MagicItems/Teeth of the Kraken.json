@@ -1,0 +1,14 @@
+{
+  "customIndicator": "RML",
+  "name": "Teeth of the Kraken",
+  "type": "Wondrous Item",
+  "rarity": "Very Rare",
+
+  "source": "Homebrew",
+
+  "I0D": "Gullet Cove was once, three centuries ago, a centre in the kraken hunting trade. Younger specimens of the vast beasts used to swim into the bay, making them prime targets for those willing to hunt a creature of such power. Even a juvenile kraken is capable of ripping apart a dozen ships with ease. Artefacts of this old and bloody trade are occasionally found on the market stalls of the Cove. This bag of Kraken teeth is proof of that.\nThe bag contains 12 kraken teeth, usable as throwing darts.",
+  "I1H": "Kraken Tooth.",
+  "I1D": "1d8 piercing + 1d4 lightning damage. Finesse, thrown (range 20/60)",
+  "I2H": "",
+  "I2D": "When a kraken tooth causes damage to a creature, it delivers a jolt of stored lightning energy, as 1d4 bonus damage.). Each tooth can be thrown\nonce."
+}

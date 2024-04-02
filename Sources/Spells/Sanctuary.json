@@ -1,0 +1,66 @@
+{
+  "name": "Sanctuary",
+  "source": "PHB",
+  "page": 272,
+  "srd": true,
+  "basicRules": true,
+  "level": 1,
+  "school": "A",
+  "time": [
+    {
+      "number": 1,
+      "unit": "bonus"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "feet",
+      "amount": 30
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": "a small silver mirror"
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "minute",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a {@spell fireball}.",
+    "If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
+  ],
+  "savingThrow": [
+    "wisdom"
+  ],
+  "areaTags": [
+    "ST"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Cleric",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ]
+  }
+}

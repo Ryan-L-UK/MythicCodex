@@ -1,0 +1,14 @@
+{
+  "customIndicator": "RML",
+  "name": "Draught of Lycanthropy",
+  "type": "Potion",
+  "rarity": "Legendary",
+
+  "source": "Homebrew",
+
+  "I0D": "When you drink this potion you are cursed with lycanthropy for 1 hour. During this time you will be able take the form of your chosen beast and will retain the ability until the hour expires.",
+  "I1H": "",
+  "I1D": "Once consumed the drinker must make a DC5 Constitution saving throw. On a failed save, the effect of the potion is permanent. This DC save increases by 5 each time the potion is consumed by that same user.",
+  "I2H": "",
+  "I2D": "This potion bottle is covered in fur, the ingredients resemble a thick sludge that sloshes about within the bottle, when opened, bestial snarls, howls and wails emanate from within."
+}

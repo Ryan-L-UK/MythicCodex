@@ -1,0 +1,16 @@
+{
+  "customIndicator": "RML",
+  "name": "Wyvernspur's Smite",
+  "level": "2",
+  "school": "Evocation",
+  "components": "V",
+  "time": "1 action",
+  "range": "30 ft.",
+  "duration": "Up to 1 minute.",
+  "source": "Homebrew",
+  "S0D": "A creature of your choice that you can see within range is empowered with the might of Wyvernspur, and their weapon glows with radiant energy.",
+  "S1D": "The next time the target hit a creature with a weapon attack before this spell ends, their weapon gleams with astral radiance as they strike. The attack deals an extra 2d6 radiant damage.",
+  "S2D": "The damaged creature now sheds a dim light in a 5-foot radius for the duration of the spell. The creature is now visible and any form of invisibility is impossible until the spell ends.",
+  "entriesHigherLevel": "When you use this magical ability at higher levels, the extra damage increases by 1d6 for each caster level above 2nd.",
+  "class0": "Bard"
+}

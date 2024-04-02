@@ -1,0 +1,10 @@
+{
+  "customIndicator": "RML",
+  "name": "Elixir of the Dragons Bite",
+  "type": "Potion",
+  "rarity": "Legendary",
+  "source": "Homebrew",
+  "I0D": "When you drink this potion, you immediately feel yourself changing and transforming. Where once was flesh, you feel scales, your nose elongates into a snout and you feel yourself becoming a dragon. Sadly, the potion is a little old and you only manage kobold. The drinker is transformed into a kobold for exactly 24 hours, upon which the drinker transforms back instantaneously.",
+  "I1D": "During the transformation the drinker's stats are unaffected, and any worn items transform too. During the transformation the drinker gains the ability to speak draconic, under common, and common, but loses the ability to speak any other language for the duration of the transformation.",
+  "I2D": "This potion bottle contains a crimson red liquid and has a picture of a dragon drawn on the side of what is quite a tattered label. Yet the liquid inside itself appears entirely untouched. That means the potion bottle has either been regularly recycled, or no one has drunk the original batch."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Arrow",
+  "source": "PHB",
+  "page": 150,
+  "srd": true,
+  "basicRules": true,
+  "type": "A",
+  "rarity": "none",
+  "weight": 0.05,
+  "value": 5,
+  "entries": [
+    "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield."
+  ]
+}

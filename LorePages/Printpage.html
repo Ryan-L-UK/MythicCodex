@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../EnchantedForge/CSS/PrintStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/CoreStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/DocumentStyling.css" />
+    <title>Heart Of Winter</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../EnchantedForge/Components/favicon.ico"
+    />
+  </head>
+  <body>
+    <!---------------------------------------->
+    <!--Nav Bar-->
+    <!---------------------------------------->
+    <object id="Nav_output"></object>
+    <!---------------------------------------->
+    <!--Content-->
+    <!---------------------------------------->
+    <div class="content-container">
+      <br />
+      <div id="name" class="hidden">file</div>
+      <div id="photo">
+        <div class="Map Parchment">
+          <div class="MapBorder">
+            <img
+              class="corner-decoration corner-left-top"
+              src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+            />
+            <img
+              class="corner-decoration corner-right-top"
+              src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+            />
+            <img
+              class="corner-decoration corner-right-bottom"
+              src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+            />
+            <img
+              class="corner-decoration corner-left-bottom"
+              src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+            />
+            <div class="mapstyle">
+              <img
+                src="../Sources/Faerun/Gullet Cove Map/Location/WaukeensPromenade.jpg"
+                id="mainmap"
+                width="2500px"
+              />
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div id="output" class="hidden"></div>
+      <br />
+      <button class="submititem" onclick="takeshot()">Save Map</button>
+      <br />
+      <br />
+    </div>
+    <!--Footer-->
+    <object id="Ftr_output"></object>
+    <!--END-->
+  </body>
+</html>
+<script src="../EnchantedForge/JavaScript/CoreScripts.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>

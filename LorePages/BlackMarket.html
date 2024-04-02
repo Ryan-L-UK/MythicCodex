@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../EnchantedForge/CSS/CoreStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/Sources.css" />
+    <title>Heart Of Winter</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../EnchantedForge/Components/favicon.ico"
+    />
+  </head>
+  <body>
+    <!---------------------------------------->
+    <!--Nav Bar-->
+    <!---------------------------------------->
+    <object id="Nav_output"></object>
+    <!---------------------------------------->
+    <!--Content-->
+    <!---------------------------------------->
+    <br />
+    <div class="content-container">
+      <button class="BuyButton" onclick="generateItems();">Refresh Shop</button>
+      <div class="shop-container">
+        <div class="inventory" id="bmTable">
+          <h1 class="listname">Shadow Thieves Guild: Black Market</h1>
+          <br />
+        </div>
+
+        <div class="viewitem">
+          <br />
+          <br />
+          <div class="MarketContainer" id="itemframe">
+            <br />
+
+            <img src="" class="BMIcon" id="BMIcon" />
+            <div class="BMName" id="BMName"></div>
+            <div class="details-container">
+              <div class="BMimage">
+                <img src="" class="BMMainImage" id="BMMainImage" />
+              </div>
+              <div class="BMDesc" id="BMDesc"></div>
+            </div>
+
+            <div class="BMButtons">
+              <div class="BMCost" id="BMCost"></div>
+              <div class="BMBuy hidden" id="BMBuy">
+                <button class="BuyButton" onclick="buyItem();">Buy Item</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Footer-->
+    <object id="Ftr_output"></object>
+    <!--END-->
+  </body>
+</html>
+<script src="../EnchantedForge/JavaScript/CoreScripts.js"></script>
+<script src="../EnchantedForge/JavaScript/Market_Builder.js"></script>
+<script src="../EnchantedForge/JavaScript/Market_ETL.js"></script>

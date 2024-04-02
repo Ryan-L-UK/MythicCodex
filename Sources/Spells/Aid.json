@@ -1,0 +1,100 @@
+{
+  "name": "Aid",
+  "source": "PHB",
+  "page": 211,
+  "srd": true,
+  "basicRules": true,
+  "level": 2,
+  "school": "A",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "feet",
+      "amount": 30
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": "a tiny strip of white cloth"
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "hour",
+        "amount": 8
+      }
+    }
+  ],
+  "entries": [
+    "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
+  ],
+  "entriesHigherLevel": [
+    {
+      "type": "entries",
+      "name": "At Higher Levels",
+      "entries": [
+        "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
+      ]
+    }
+  ],
+  "miscTags": [
+    "HL"
+  ],
+  "areaTags": [
+    "MT"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Cleric",
+        "source": "PHB"
+      },
+      {
+        "name": "Paladin",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ],
+    "classVariant": [
+      {
+        "name": "Bard",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Bard",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      },
+      {
+        "name": "Ranger",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      }
+    ]
+  }
+}

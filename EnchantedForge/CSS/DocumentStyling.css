@@ -1,0 +1,166 @@
+/*****************************
+/*           HEADERS
+/*****************************/
+h1 {
+  color: #04704c;
+  text-align: left;
+  font-family: CinzelDecorative;
+  margin-top: 1em;
+  column-span: all;
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  color: #04704c;
+  text-align: left;
+  font-family: MrEaves;
+  margin-top: 1rem;
+  column-span: all;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  color: #04704c;
+  font-family: MrEaves;
+  margin-top: 0.2em;
+  font-size: 2.1rem;
+  border-bottom: 1px solid #d8b058;
+  margin: 0 0 0.2em;
+}
+h4 {
+  color: #04704c;
+  font-family: MrEaves;
+  margin-top: 0.2em;
+  margin-bottom: 0em;
+  font-size: 1.8rem;
+}
+h5 {
+  color: #000000;
+  font-family: MrEaves;
+  margin-top: 0.2em;
+  margin-bottom: 0em;
+  font-size: 1.4rem;
+}
+p,
+code {
+  text-align: left;
+  font-family: roboto;
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  display: block;
+}
+hr {
+  margin: 17px 0 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #cacaca;
+  height: 0;
+  display: block;
+}
+pre {
+  margin: 0;
+  padding: 0;
+}
+/*****************************
+/*         OBJECTS
+/*****************************/
+em {
+  font-style: italic;
+  font-family: Roboto-medium;
+}
+blockquote {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 2% 0% 2%;
+  background: #eff3f5;
+  border-style: solid;
+  border-width: 1px;
+  border-image: url(../ImageAssets/GeneralImages/noteBorder.png) 12 stretch;
+  border-image-outset: 9px 0px;
+  border-image-width: 11px;
+  padding: 1%;
+  filter: drop-shadow(1px 4px 6px #888);
+  font-size: 1rem;
+  font-family: Lora, Times, serif;
+}
+.advmap {
+  display: block;
+  width: 950px;
+  justify-items: center;
+  margin: 5px;
+  align-items: center;
+  justify-items: center;
+  border: 4px solid #000000;
+  position: relative;
+}
+.advmap img {
+  display: block;
+  width: 950px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+.markdown-image {
+  max-width: 100%;
+  max-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+/*-----------------------------------------------------------
+Tables
+Many of the documents loaded contain tables, here are the
+various table stylings that control them. 
+-----------------------------------------------------------*/
+table {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  table-layout: auto;
+}
+table,
+td,
+th {
+  border: 1px solid #eceae8;
+  border-collapse: collapse;
+}
+table,
+td {
+  font-family: roboto;
+}
+thead {
+  border-bottom: 3px solid #d0cac5;
+}
+tbody,
+th {
+  text-align: left;
+  padding: 5px 10px;
+  min-width: 50px;
+}
+th {
+  background-color: #fff;
+  font-family: Roboto-bold;
+}
+td {
+  padding: 3px 10px;
+}
+tr:nth-child(even) {
+  background-color: #f1f4f1;
+}
+tr:nth-child(odd) {
+  background-color: #d8e8e3;
+}

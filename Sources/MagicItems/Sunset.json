@@ -1,0 +1,21 @@
+{
+  "customIndicator": "RML",
+  "name": "Sunset",
+  "type": "Weapon",
+  "rarity": "legendary",
+  "reqAttune": "Requires Attunement",
+
+  "source": "Homebrew",
+
+  "weaponCategory": "Martial Weapon, Firearm",
+  "dmgType": "Radiant",
+  "dmg1": "2d12",
+
+  "property": "Range (80/240), Two-Handed",
+
+  "I0D": "Gives a +2 bonus to attack and damage rolls made with this magical weapon.",
+  "I1H": "Holy Technology.",
+  "I1D": "Sunset doesn't use ammunition, instead it shoots pure radiant energy, making it deal radiant damage instead of piercing damage with its attacks.",
+  "I2H": "Holy Radiance. ",
+  "I2D": "Once per 24 hours, you can use your action to cast the Crusader's Mantle spell without requiring any spell components."
+}

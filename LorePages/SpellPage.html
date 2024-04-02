@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../EnchantedForge/CSS/CoreStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/Sources.css" />
+    <title>Heart Of Winter</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../EnchantedForge/Components/favicon.ico"
+    />
+  </head>
+  <body>
+    <!---------------------------------------->
+    <!--Nav Bar-->
+    <!---------------------------------------->
+    <object id="Nav_output"></object>
+    <!---------------------------------------->
+    <!--Content-->
+    <!---------------------------------------->
+    <br />
+    <div class="content-container">
+      <div class="list-container">
+        <div class="List" id="sTable">
+          <h1 class="listname">Complete list of all spells:</h1>
+          <br />
+          <input
+            class="whiteInput"
+            type="text"
+            id="myInput"
+            onkeyup="tableFilter()"
+            placeholder="Search for spell.."
+          />
+          <br />
+        </div>
+        <div class="View">
+          <div class="tri-container">
+            <div class="col1"><h1 class="listname">Spell:</h1></div>
+            <div class="col2"><h1 class="listname"></h1></div>
+            <div class="col3">
+              <button class="unidentified" onclick="encode();">
+                Unidentified
+              </button>
+            </div>
+          </div>
+
+          <br />
+          <div id="photo">
+            <div class="SpellContainer">
+              <div class="spellBorder">
+                <span
+                  ><h1 class="spellname" id="name-out"></h1>
+                  <img class="conicon" src="" id="concentration-out"
+                /></span>
+                <div class="spell-container">
+                  <div class="Desc">
+                    <!--SPELL TYPE & LEVEL-->
+                    <h2 class="spelltype" id="SLvlType-out"></h2>
+                    <p>
+                      <span class="standard bold">Casting Time:</span>
+                      <span class="standard capital" id="time-out"></span>
+                      <br />
+                      <span class="standard bold">Range/Area:</span> -
+                      <span class="standard capital" id="range-out"></span>
+                      <br />
+                      <span class="standard bold">Components:</span>
+                      <span class="standard" id="components-out"></span>
+                      <br />
+                      <span class="standard bold">Duration:</span>
+                      <span class="standard capital" id="duration-out"></span>
+                      <br />
+                      <span class="standard bold" id="save-heading"
+                        >Attack/Save:</span
+                      >
+                      <span
+                        class="standard capital"
+                        id="savingThrow-out"
+                      ></span>
+                      <span><img class="icon" src="" id="saveIcon-out" /></span>
+                    </p>
+                  </div>
+                  <div class="Image">
+                    <img src="" class="SpellImage" id="spellImage" />
+                  </div>
+                </div>
+                <br />
+                <div class="blackDIV"></div>
+                <br />
+                <p class="spellBold" id="S0H-out"></p>
+                <p class="spellBody" id="S0D-out"></p>
+                <p class="spellBold" id="S1H-out"></p>
+                <p class="spellBody" id="S1D-out"></p>
+                <p class="spellBold" id="S2H-out"></p>
+                <p class="spellBody" id="S2D-out"></p>
+                <p class="spellBold" id="S3H-out"></p>
+                <p class="spellBody" id="S3D-out"></p>
+                <p class="spellBold" id="S4H-out"></p>
+                <p class="spellBody" id="S4D-out"></p>
+                <p class="spellBold" id="S5H-out"></p>
+                <p class="spellBody" id="S5D-out"></p>
+                <p class="spellBold" id="S6H-out"></p>
+                <p class="spellBody" id="S6D-out"></p>
+                <p class="spellBold" id="S7H-out"></p>
+                <p class="spellBody" id="S7D-out"></p>
+                <p class="spellBold" id="S8H-out"></p>
+                <p class="spellBody" id="S8D-out"></p>
+                <div id="HigherHide" class="hidden">
+                  <p class="spellBold" id="higherLevelH-out"></p>
+                  <p class="spellBody" id="entriesHigherLevel-out"></p>
+                </div>
+                <br />
+                <div class="item-container" id="item-container">
+                  <div class="heading">
+                    <p>
+                      <span class="cClass" id="class0-out"></span>
+                      <span class="cClass" id="class1-out"></span>
+                      <span class="cClass" id="class2-out"></span>
+                      <span class="cClass" id="class3-out"></span>
+                      <span class="cClass" id="class4-out"></span>
+                      <span class="cClass" id="class5-out"></span>
+                      <span class="cClass" id="class6-out"></span>
+                      <span class="cClass" id="class7-out"></span>
+                      <span class="cClass" id="class8-out"></span>
+                    </p>
+                  </div>
+                  <div class="sourcegraphic">
+                    <span
+                      ><div class="source" id="source-out"></div>
+                      <div class="pageno" id="page-out"></div
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="output" class="hidden"></div>
+          <div class="options">
+            <span>
+              <button class="submitspell" onclick="showInput();">
+                View Spell</button
+              ><button class="submitspell" onclick="takeshot()">
+                Save Spell</button
+              ><button class="submitspell" onclick="exportSource()">
+                Code
+              </button></span
+            >
+          </div>
+          <br />
+          <br />
+          <form id="spellform">
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Basic Details</h1>
+                <br />
+                <input
+                  type="hidden"
+                  id="customIndicator"
+                  name="customIndicator"
+                  value="RML"
+                />
+              </div>
+              <div class="listMiddle">
+                <div class="split-container">
+                  <div class="fouronesplit">
+                    <label>Spell Name:</label>
+                    <input type="text" id="name" name="name" />
+                  </div>
+                  <div class="fouronesplit">
+                    <label> Spell Level:</label><br />
+                    <input type="number" id="level" name="level" /><br />
+                  </div>
+                </div>
+                <div class="tri-container">
+                  <div class="col1">
+                    <label>School:</label><br />
+                    <input
+                      class="inputlist"
+                      list="SpellTypes"
+                      id="school"
+                      name="school"
+                    />
+                    <datalist id="SpellTypes">
+                      <option value="Abjuration"></option>
+                      <option value="Conjuration"></option>
+                      <option value="Divination"></option>
+                      <option value="Enchantment"></option>
+                      <option value="Evocation"></option>
+                      <option value="Illusion"></option>
+                      <option value="Necromancy"></option>
+                      <option value="Transmutation"></option>
+                    </datalist>
+                  </div>
+                  <div class="col2">
+                    <label>Concentration:</label><br />
+                    <input
+                      class="inputlist"
+                      list="Concentration"
+                      id="concentration"
+                      name="concentration"
+                    />
+                    <datalist id="Concentration">
+                      <option value="Yes"></option>
+                    </datalist>
+                  </div>
+                  <div class="col3">
+                    <label>Components:</label>
+                    <input
+                      type="text"
+                      size="7"
+                      id="components"
+                      name="components"
+                    /><br />
+                  </div>
+                  <div class="col1">
+                    <label>Casting Time:</label>
+                    <input type="text" size="7" id="time" name="time" /><br />
+                  </div>
+                  <div class="col2">
+                    <label>Range:</label>
+                    <input type="text" size="7" id="range" name="range" /><br />
+                  </div>
+                  <div class="col3">
+                    <label>Duration:</label>
+                    <input
+                      type="text"
+                      size="7"
+                      id="duration"
+                      name="duration"
+                    /><br />
+                  </div>
+                  <div class="col1">
+                    <label>Attack/Save:</label><br />
+                    <input
+                      class="inputlist"
+                      list="AttackSave"
+                      id="savingThrow"
+                      name="savingThrow"
+                    />
+                    <datalist id="AttackSave">
+                      <option value="Melee"></option>
+                      <option value="Ranged"></option>
+                      <option value="Strength"></option>
+                      <option value="Dexterity"></option>
+                      <option value="Constitution"></option>
+                      <option value="Intelligence"></option>
+                      <option value="Wisdom"></option>
+                      <option value="Charisma"></option>
+                    </datalist>
+                  </div>
+                  <div class="col2">
+                    <label>Source:</label>
+                    <input type="text" id="source" name="Source" />
+                  </div>
+                  <div class="col3">
+                    <label>Page Number:</label>
+                    <input type="number" id="page" name="Page" />
+                  </div>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">Spell Actions</button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Section 1 Name:</label>
+                    <input type="text" id="S0H" name="S0H" /><br />
+                    <label>Section 1 Description:</label>
+                    <textarea id="S0D" name="S0D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 2 Name:</label>
+                    <input type="text" id="S1H" name="S1H" /><br />
+                    <label>Section 2 Description:</label>
+                    <textarea id="S1D" name="S1D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 3 Name:</label>
+                    <input type="text" id="S2H" name="S2H" /><br />
+                    <label>Section 3 Description:</label>
+                    <textarea id="S2D" name="S2D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 4 Name:</label>
+                    <input type="text" id="S3H" name="S3H" /><br />
+                    <label>Section 4 Description:</label>
+                    <textarea id="S3D" name="S3D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 5 Name:</label>
+                    <input type="text" id="S4H" name="S4H" /><br />
+                    <label>Section 5 Description:</label>
+                    <textarea id="S4D" name="S4D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 6 Name:</label>
+                    <input type="text" id="S5H" name="S5H" /><br />
+                    <label>Section 6 Description:</label>
+                    <textarea id="S5D" name="S5D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 7 Name:</label>
+                    <input type="text" id="S6H" name="S6H" /><br />
+                    <label>Section 7 Description:</label>
+                    <textarea id="S6D" name="S6D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 8 Name:</label>
+                    <input type="text" id="S7H" name="S7H" /><br />
+                    <label>Section 8 Description:</label>
+                    <textarea id="S7D" name="S7D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 9 Name:</label>
+                    <input type="text" id="S8H" name="S8H" /><br />
+                    <label>Section 9 Description:</label>
+                    <textarea id="S8D" name="S8D" cols="56" rows="3"></textarea
+                    ><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">
+                  At Higher Levels
+                </button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>At Higher Levels:</label>
+                    <textarea
+                      id="entriesHigherLevel"
+                      name="entriesHigherLevel"
+                      cols="56"
+                      rows="3"
+                    ></textarea>
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Known By</h1>
+                <br />
+              </div>
+              <div class="listMiddle">
+                <label>Spell Usable By:</label><br />
+                <div class="tri-container">
+                  <div class="col1">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class0"
+                      name="class0"
+                    />
+                  </div>
+                  <div class="col2">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class1"
+                      name="class1"
+                    />
+                  </div>
+                  <div class="col3">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class2"
+                      name="class2"
+                    />
+                  </div>
+                  <div class="col1">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class3"
+                      name="class3"
+                    />
+                  </div>
+                  <div class="col2">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class4"
+                      name="class4"
+                    />
+                  </div>
+                  <div class="col3">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class5"
+                      name="class5"
+                    />
+                  </div>
+                  <div class="col1">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class6"
+                      name="class6"
+                    />
+                  </div>
+                  <div class="col2">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class7"
+                      name="class7"
+                    />
+                  </div>
+                  <div class="col3">
+                    <input
+                      class="inputlist"
+                      list="ClassTypes"
+                      id="class8"
+                      name="class8"
+                    />
+                  </div>
+                  <datalist id="ClassTypes">
+                    <option value="Artificer"></option>
+                    <option value="Bard"></option>
+                    <option value="Cleric"></option>
+                    <option value="Druid"></option>
+                    <option value="Paladin"></option>
+                    <option value="Ranger"></option>
+                    <option value="Sorcerer"></option>
+                    <option value="Warlock"></option>
+                    <option value="Wizard"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <br />
+          </form>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <object id="Ftr_output"></object>
+    <!--END-->
+  </body>
+</html>
+<script src="../EnchantedForge/JavaScript/CoreScripts.js"></script>
+<script src="../EnchantedForge/JavaScript/Spell_Builder.js"></script>
+<script src="../EnchantedForge/JavaScript/Spell_ETL.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>

@@ -1,0 +1,128 @@
+{
+  "name": "False Life",
+  "source": "PHB",
+  "page": 239,
+  "srd": true,
+  "level": 1,
+  "school": "N",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "self"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": "a small amount of alcohol or distilled spirits"
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "hour",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "Bolstering yourself with a necromantic facsimile of life, you gain {@dice 1d4 + 4} temporary hit points for the duration."
+  ],
+  "entriesHigherLevel": [
+    {
+      "type": "entries",
+      "name": "At Higher Levels",
+      "entries": [
+        "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+      ]
+    }
+  ],
+  "miscTags": [
+    "THP"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ]
+  },
+  "optionalfeatures": [
+    {
+      "name": "Fiendish Vigor",
+      "source": "PHB",
+      "featureType": [
+        "EI"
+      ]
+    }
+  ],
+  "feats": [
+    {
+      "name": "Aberrant Dragonmark",
+      "source": "ERLW"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "TCE"
+    },
+    {
+      "name": "Shadow Touched",
+      "source": "TCE"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Shadow Touched",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Divinely Favored",
+      "source": "UA2022HeroesOfKrynn"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "UA2022HeroesOfKrynn"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "DSotDQ"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "UA2022HeroesOfKrynnRevisited"
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "PHB"
+    },
+    {
+      "name": "Strixhaven Initiate",
+      "source": "SCC"
+    }
+  ]
+}

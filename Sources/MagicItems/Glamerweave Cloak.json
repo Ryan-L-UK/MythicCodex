@@ -1,0 +1,13 @@
+{
+  "customIndicator": "RML",
+  "name": "Glamerweave Cloak",
+  "type": "Wondrous Item",
+  "rarity": "Legendary",
+
+  "page": "",
+  "source": "Homebrew",
+
+  "I0D": "This garment has been umbued with illusion magic, the look and appearance can be changed based on what the wearer would like, this can be changed as often as the wearer likes.",
+  "I1H": "",
+  "I1D": "If the cloak is unworn, it appears to show what the onlooker would most like it to look like, rather than what it actually is."
+}

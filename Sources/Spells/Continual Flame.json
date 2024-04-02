@@ -1,0 +1,93 @@
+{
+  "name": "Continual Flame",
+  "source": "PHB",
+  "page": 227,
+  "srd": true,
+  "level": 2,
+  "school": "V",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "touch"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": {
+      "text": "ruby dust worth 50 gp, which the spell consumes",
+      "cost": 5000,
+      "consume": true
+    }
+  },
+  "duration": [
+    {
+      "type": "permanent",
+      "ends": [
+        "dispel"
+      ]
+    }
+  ],
+  "entries": [
+    "A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched."
+  ],
+  "miscTags": [
+    "OBJ"
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Cleric",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer",
+        "source": "UAArtificer"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ],
+    "classVariant": [
+      {
+        "name": "Druid",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      },
+      {
+        "name": "Druid",
+        "source": "PHB",
+        "definedInSource": "TCE"
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Human (Mark of Making)",
+      "source": "ERLW",
+      "baseName": "Human",
+      "baseSource": "PHB"
+    }
+  ],
+  "feats": [
+    {
+      "name": "Adept of the Black Robes",
+      "source": "UA2022HeroesOfKrynn"
+    }
+  ]
+}

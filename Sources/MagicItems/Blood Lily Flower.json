@@ -1,0 +1,10 @@
+{
+  "customIndicator": "RML",
+  "name": "Blood Lily Flower",
+  "type": "Wondrous Item",
+  "rarity": "common",
+
+  "source": "Homebrew",
+
+  "I0D": "When this flower is placed within water, the surrounding water will turn into blood."
+}

@@ -1,0 +1,53 @@
+/*****************************
+/*           CONTAINER
+/*****************************/
+.sidenav {
+  width: 230px;
+  /* position: fixed;*/
+  background: #fff;
+  overflow-x: hidden;
+  padding: 10px 0 10px;
+  margin: 10px;
+  border: 1.5px solid #bcbcbc;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  display: block;
+  font-family: roboto;
+  color: #000;
+}
+.sidenav a:hover {
+  color: #0c411e;
+  border-left: 3px solid #0c411e;
+}
+.LocationOutput {
+  width: 90%;
+}
+a.menuhead {
+  font-family: Roboto-medium;
+  text-decoration: none;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+a.menu {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+a.submenu {
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 0.75rem;
+}
+a.expandmenu {
+  font-size: 0.65rem;
+  padding-left: 45px;
+  text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+.hideme {
+  display: none;
+}

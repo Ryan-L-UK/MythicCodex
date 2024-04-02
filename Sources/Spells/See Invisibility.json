@@ -1,0 +1,83 @@
+{
+  "name": "See Invisibility",
+  "source": "PHB",
+  "page": 274,
+  "srd": true,
+  "level": 2,
+  "school": "D",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "self"
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true,
+    "m": "a pinch of talc and a small sprinkling of powdered silver"
+  },
+  "duration": [
+    {
+      "type": "timed",
+      "duration": {
+        "type": "hour",
+        "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "For the duration, you see {@condition invisible} creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent."
+  ],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Bard",
+        "source": "PHB"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Half-Elf (Variant; Mark of Detection)",
+      "source": "ERLW",
+      "baseName": "Half-Elf",
+      "baseSource": "PHB"
+    }
+  ],
+  "feats": [
+    {
+      "name": "Adept of the Red Robes",
+      "source": "UA2022HeroesOfKrynn"
+    },
+    {
+      "name": "Adept of the White Robes",
+      "source": "DSotDQ"
+    },
+    {
+      "name": "Adept of the White Robes",
+      "source": "UA2022HeroesOfKrynnRevisited"
+    }
+  ]
+}

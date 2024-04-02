@@ -1,0 +1,14 @@
+{
+  "customIndicator": "RML",
+  "name": "Body of Sunset",
+  "type": "Wondrous Item",
+  "rarity": "Legendary",
+
+  "source": "Homebrew",
+
+  "I0D": "This is a part of the legendary Sunset rifle, a fabled weapon forged long ago as a tool for wielding light against the darkness. Also known as 'radiant piercer', it did greater damage the further the targets alignment was from lawful good.",
+  "I1H": "",
+  "I1D": "The Sunset was last rumoured to have been wielded by a great elven hero Alaine Greenleaf, but was feared too powerful and split into three pieces.",
+  "I2H": "",
+  "I2D": "This is the body, a blend of ornate gold metal work and hand carved wood, laden with ornate cyan jewels. The body has a perfectly cut channel to receive the barrel and a forward bracket to receive some form of sight. The trigger system requires no adjustments, working perfectly, as if it were just made yesterday."
+}

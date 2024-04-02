@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../EnchantedForge/CSS/CoreStyling.css" />
+    <link rel="stylesheet" href="../EnchantedForge/CSS/Sources.css" />
+    <title>Heart Of Winter</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../EnchantedForge/Components/favicon.ico"
+    />
+  </head>
+  <body>
+    <!---------------------------------------->
+    <!--Nav Bar-->
+    <!---------------------------------------->
+    <object id="Nav_output"></object>
+    <!---------------------------------------->
+    <!--Content-->
+    <!---------------------------------------->
+    <br />
+    <div class="content-container">
+      <div class="list-container">
+        <div class="List" id="iTable">
+          <h1 class="listname">Magical & Wondrous Item List:</h1>
+          <br />
+          <input
+            class="whiteInput"
+            type="text"
+            id="myInput"
+            onkeyup="tableFilter()"
+            placeholder="Search for item.."
+          />
+          <br />
+        </div>
+        <div class="View">
+          <h1 class="listname">Item:</h1>
+          <br />
+          <div id="photo">
+            <div class="ItemContainer">
+              <div class="ItemParchement">
+                <div class="itemBorder">
+                  <img
+                    class="item-decoration corner-left-top"
+                    src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+                  />
+                  <img
+                    class="item-decoration corner-right-top"
+                    src="../EnchantedForge/ImageAssets/MapAssets/CornerVector.png"
+                  />
+                  <div class="WaterColour">
+                    <img src="" class="ItemImage" id="ItemImage" />
+                  </div>
+                  <span class="hcentre"
+                    ><h1 class="itemname" id="name-out"></h1>
+                    <img
+                      class="attuneicon"
+                      src="/EnchantedForge/ImageAssets/CoreSpellIcons/attunement.png"
+                      id="attunement-out"
+                  /></span>
+                  <div class="blackDIV"></div>
+                  <h2 class="itemSub" id="type-out"></h2>
+                  <h2 class="itemSub" id="dmg-out"></h2>
+                  <br />
+                  <!--ITEM DESCRIPTION-->
+                  <p class="itemBold" id="I0H-out"></p>
+                  <p class="itemBody" id="I0D-out"></p>
+                  <p class="itemBold" id="I1H-out"></p>
+                  <p class="itemBody" id="I1D-out"></p>
+                  <p class="itemBold" id="I2H-out"></p>
+                  <p class="itemBody" id="I2D-out"></p>
+                  <p class="itemBold" id="I3H-out"></p>
+                  <p class="itemBody" id="I3D-out"></p>
+                  <p class="itemBold" id="I4H-out"></p>
+                  <p class="itemBody" id="I4D-out"></p>
+                  <p class="itemBold" id="I5H-out"></p>
+                  <p class="itemBody" id="I5D-out"></p>
+                  <p class="itemBold" id="I6H-out"></p>
+                  <p class="itemBody" id="I6D-out"></p>
+                  <p class="itemBold" id="I7H-out"></p>
+                  <p class="itemBody" id="I7D-out"></p>
+                  <p class="itemBold" id="I8H-out"></p>
+                  <p class="itemBody" id="I8D-out"></p>
+                  <p class="itemBold hidden" id="cHeading-out"></p>
+                  <p class="charges hidden" id="charges-out"></p>
+                  <!--ITEM SOURCE-->
+                  <div class="sourcegraphic">
+                    <span
+                      ><div class="source" id="source-out"></div>
+                      <div class="pageno" id="page-out"></div
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="output" class="hidden"></div>
+          <div class="options">
+            <span>
+              <button class="submititem" onclick="showInput();">
+                View Item</button
+              ><button class="submititem" onclick="takeshot()">Save Item</button
+              ><button class="submititem" onclick="exportSource()">
+                Code
+              </button></span
+            >
+          </div>
+          <br />
+          <form id="itemform">
+            <div class="whitecontainer">
+              <div class="listTop">
+                <h1 class="listDsc">Basic Details</h1>
+                <br />
+                <input
+                  type="hidden"
+                  id="customIndicator"
+                  name="customIndicator"
+                  value="RML"
+                />
+              </div>
+              <div class="listMiddle">
+                <label>Item Name:</label>
+                <input type="text" id="name" name="name" />
+                <br />
+                <div class="tri-container">
+                  <div class="col1">
+                    <label>Requires Attunement:</label>
+                    <input
+                      class="inputlist"
+                      list="Attune"
+                      id="reqAttune"
+                      name="reqAttune"
+                    />
+                    <datalist id="Attune">
+                      <option value="Yes"></option>
+                    </datalist>
+                  </div>
+                  <div class="col2">
+                    <label>Rarity:</label>
+                    <input
+                      class="inputlist"
+                      list="Rarity"
+                      id="rarity"
+                      name="rarity"
+                    />
+                    <datalist id="Rarity">
+                      <option value="Common"></option>
+                      <option value="Uncommon"></option>
+                      <option value="Rare"></option>
+                      <option value="Very Rare"></option>
+                      <option value="Legendary"></option>
+                      <option value="Artifact"></option>
+                    </datalist>
+                  </div>
+                  <div class="col3">
+                    <label>Type:</label>
+                    <input
+                      class="inputlist"
+                      list="Type"
+                      id="type"
+                      name="type"
+                    />
+                    <datalist id="Type">
+                      <option value="Adventuring gear"></option>
+                      <option value="Ammunition"></option>
+                      <option value="Artisan's Tools"></option>
+                      <option value="Component"></option>
+                      <option value="Explosive"></option>
+                      <option value="Food And Drink"></option>
+                      <option value="Gaming Set"></option>
+                      <option value="Generic Variant"></option>
+                      <option value="Heavy Armour"></option>
+                      <option value="Instrument"></option>
+                      <option value="Light Armour"></option>
+                      <option value="Medium Armour"></option>
+                      <option value="Mount"></option>
+                      <option value="Potion"></option>
+                      <option value="Ranged"></option>
+                      <option value="Ring"></option>
+                      <option value="Rod"></option>
+                      <option value="Scroll"></option>
+                      <option value="Shield"></option>
+                      <option value="Spellcasting Focus"></option>
+                      <option value="Tack and harness"></option>
+                      <option value="Tools"></option>
+                      <option value="Trade Good"></option>
+                      <option value="Treasure"></option>
+                      <option value="Vehicle (Air)"></option>
+                      <option value="Vehicle (Land)"></option>
+                      <option value="Vehicle (Ship)"></option>
+                      <option value="Wand"></option>
+                      <option value="Weapon"></option>
+                      <option value="Wondrous Item"></option>
+                      <option value="Other"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="tri-container">
+                  <div class="col1">
+                    <label>Charges:</label><br />
+                    <input type="number" id="charges" name="charges" />
+                  </div>
+                  <div class="col2">
+                    <label>Source:</label>
+                    <input type="text" id="source" name="source" />
+                  </div>
+                  <div class="col3">
+                    <label>Page:</label><br />
+                    <input type="number" id="page" name="page" />
+                  </div>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">
+                  Weapon Details
+                </button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <div class="tri-container">
+                    <div class="col1">
+                      <label>Staff:</label>
+                      <input
+                        class="inputlist"
+                        list="Staff"
+                        id="staff"
+                        name="staff"
+                      />
+                      <datalist id="Staff">
+                        <option value="Yes"></option>
+                      </datalist>
+                    </div>
+                    <div class="col2">
+                      <label>Weapon Category:</label>
+                      <input
+                        type="text"
+                        id="weaponCategory"
+                        name="weaponCategory"
+                      />
+                    </div>
+                    <div class="col3">
+                      <label>Damage Type:</label>
+                      <input
+                        class="inputlist"
+                        list="dmgType"
+                        id="dmgType"
+                        name="dmgType"
+                      />
+                      <datalist id="dmgType">
+                        <option value="Acid"></option>
+                        <option value="Bludgeoning"></option>
+                        <option value="Cold"></option>
+                        <option value="Fire"></option>
+                        <option value="Force"></option>
+                        <option value="Lightning"></option>
+                        <option value="Necrotic"></option>
+                        <option value="Piercing"></option>
+                        <option value="Poison"></option>
+                        <option value="Psychic"></option>
+                        <option value="Radiant"></option>
+                        <option value="Slashing"></option>
+                        <option value="Thunder"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="split-container">
+                    <div class="oneonefoursplit">
+                      <label>Damage 1:</label>
+                      <input type="text" id="dmg1" name="dmg1" />
+                    </div>
+                    <div class="oneonefoursplit">
+                      <label>Damage 2:</label>
+                      <input type="text" id="dmg2" name="dmg2" />
+                    </div>
+                    <div class="oneonefoursplit">
+                      <label>Properties:</label>
+                      <input type="text" id="property" name="property" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+            <div class="whitecontainer">
+              <div class="listTop">
+                <button type="button" class="collapsible">
+                  Item Descriptions
+                </button>
+              </div>
+              <div class="content">
+                <div class="listMiddle">
+                  <p>
+                    <label>Section 1 Name:</label>
+                    <input type="text" id="I0H" name="I0H" /><br />
+                    <label>Section 1 Description:</label>
+                    <textarea id="I0D" name="I0D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 2 Name:</label>
+                    <input type="text" id="I1H" name="I1H" /><br />
+                    <label>Section 2 Description:</label>
+                    <textarea id="I1D" name="I1D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 3 Name:</label>
+                    <input type="text" id="I2H" name="I2H" /><br />
+                    <label>Section 3 Description:</label>
+                    <textarea id="I2D" name="I2D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 4 Name:</label>
+                    <input type="text" id="I3H" name="I3H" /><br />
+                    <label>Section 4 Description:</label>
+                    <textarea id="I3D" name="I3D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 5 Name:</label>
+                    <input type="text" id="I4H" name="I4H" /><br />
+                    <label>Section 5 Description:</label>
+                    <textarea id="I4D" name="I4D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 6 Name:</label>
+                    <input type="text" id="I5H" name="I5H" /><br />
+                    <label>Section 6 Description:</label>
+                    <textarea id="I5D" name="I5D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 7 Name:</label>
+                    <input type="text" id="I6H" name="I6H" /><br />
+                    <label>Section 7 Description:</label>
+                    <textarea id="I6D" name="I6D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 8 Name:</label>
+                    <input type="text" id="I7H" name="I7H" /><br />
+                    <label>Section 8 Description:</label>
+                    <textarea id="I7D" name="I7D" cols="56" rows="3"></textarea
+                    ><br />
+                    <label>Section 9 Name:</label>
+                    <input type="text" id="I8H" name="I8H" /><br />
+                    <label>Section 9 Description:</label>
+                    <textarea id="I8D" name="I8D" cols="56" rows="3"></textarea>
+                    <label>Cost:</label>
+                    <input type="number" id="cost" name="cost" /><br />
+                  </p>
+                </div>
+              </div>
+              <div class="listBtm"></div>
+            </div>
+            <br />
+          </form>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <object id="Ftr_output"></object>
+    <!--END-->
+  </body>
+</html>
+<script src="../EnchantedForge/JavaScript/CoreScripts.js"></script>
+<script src="../EnchantedForge/JavaScript/Item_Builder.js"></script>
+<script src="../EnchantedForge/JavaScript/Item_ETL.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>

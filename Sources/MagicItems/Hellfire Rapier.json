@@ -1,0 +1,21 @@
+{
+  "customIndicator": "RML",
+  "name": "Hellfire Rapier",
+  "type": "Weapon",
+  "rarity": "uncommon",
+
+  "page": "223",
+  "source": "BGDIA",
+
+  "weaponCategory": "martial weapon, Melee Weapon",
+  "dmgType": "Piercing",
+  "dmg1": "1d8",
+
+  "property": "Finesse",
+
+  "I0D": "This weapon is fashioned from infernal iron and traced with veins of hellfire that shed dim light in a 5-foot-radius.",
+
+  "I1D": "Any humanoid killed by an attack made with this weapon has its soul funneled into the River Styx, where it's reborn instantly as a lemure devil.",
+  "I2H": "Finesse.",
+  "I2D": "When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+}
