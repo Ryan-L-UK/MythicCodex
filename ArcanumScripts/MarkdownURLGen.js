@@ -19,10 +19,10 @@ function generateURL() {
             url = `**[${name}](http://localhost:8080/Sources/Creatures/${encodedName}.png)**`;
             break;
           case "2":
-            url = `_[${name}](http://localhost:8080/Sources/MagicItems/${encodedName}.png)_`;
+            url = `_[${name}](http://localhost:8080/Sources/CuriousItems/${encodedName}.png)_`;
             break;
           case "3":
-            url = `_[${name}](http://localhost:8080/Sources/Spells/${encodedName}.png)_`;
+            url = `_[${name}](http://localhost:8080/Sources/ArcaneSpells/${encodedName}.png)_`;
             break;
           default:
             console.log("Invalid option");

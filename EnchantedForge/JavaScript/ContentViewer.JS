@@ -4,11 +4,34 @@
 const converter = new showdown.Converter({ extensions: ["table"] });
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const Type = urlParams.get("Type");
+const Artifact = urlParams.get("Artifact");
+const Quest = urlParams.get("Quest");
 const FileName = urlParams.get("FileName");
-console.log(
-  "Librarians: Looking in the '" + Type + "' section, for '" + FileName + "'"
-);
+
+if (Artifact == "RuleSet") {
+  console.log(
+    "Librarians: Ah, so you are looking for a '" +
+      Artifact +
+      "', A fine choice. Looking in the '" +
+      Artifact +
+      "' section, for '" +
+      FileName +
+      "'"
+  );
+} else if (Artifact == "Forge") {
+  console.log(
+    "Librarians: Ah, so you are looking for a product of the '" +
+      Artifact +
+      "', A fine choice. Looking for '" +
+      FileName +
+      "'"
+  );
+  var ContentView = "Forge/" + FileName;
+} else if (Artifact == "Adventure") {
+  var ContentView = Quest + "/Quests/" + FileName;
+}
+
+/*
 if (Type == "Location") {
   var ContentView = "Faerun/Gullet Cove/Location/" + FileName;
 } else if (Type == "District") {
@@ -24,7 +47,7 @@ if (Type == "Location") {
 } else {
   console.error("Shes Dead Jim");
 }
-
+*/
 const ContentViewOut = "http://localhost:8080/Sources/" + ContentView + ".md";
 
 const fetchAndProcessImageMap = (src, imgId) => {
@@ -71,7 +94,6 @@ fetch(ContentViewOut)
     document.getElementById("Content_output").innerHTML = div.innerHTML;
     console.log("Content loaded successfully...");
   })
-
   .catch((error) => {
     console.log(
       "Librarians: If it is not in our records, it does not exist.",
@@ -91,7 +113,7 @@ fetch(ContentViewOut)
       document.querySelector(".sidenav").appendChild(newDiv);
       newDiv.appendChild(newAnchor);
       var jumplinkspec = menuselector.replace(/[^a-zA-Z0-9 ]/g, "");
-      var jumplinkCap = "#" + jumplinkspec.replaceAll(" ", "-");
+      var jumplinkCap = "#" + jumplinkspec.replaceAll(" ", "");
       var jumplink = jumplinkCap.toLowerCase();
       console.log(elementtag + ": " + menuselector + " ---> " + jumplink);
       newAnchor.setAttribute("href", jumplink);
@@ -138,11 +160,9 @@ var sticky = sidenav.offsetTop;
 var stickyos = sticky - 70;
 // Add the sticky class to the sidenav when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= stickyos) {
-    console.log("Sourceror: Menu Locked...");
+  if (window.scrollY >= stickyos) {
     sidenav.classList.add("sticky");
   } else {
     sidenav.classList.remove("sticky");
-    console.log("Sourceror: Menu Unlocked...");
   }
 }

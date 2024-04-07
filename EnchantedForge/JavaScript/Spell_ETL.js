@@ -46,7 +46,7 @@ function checkschool(school) {
 }
 // ---------------------------------------------------------------------------------------------------------
 //SPELL LIST
-fetch("http://localhost:8080/sources/Spells/")
+fetch("http://localhost:8080/Sources/ArcaneSpells/")
   .then((response) => response.json())
   .then((data) => {
     //-----------------------
@@ -160,7 +160,7 @@ function fetchData(fileName) {
   );
   document.getElementById("spellform").reset();
   console.warn("Cleric: Casting Prestidigitation On Form...");
-  fetch("http://localhost:8080/Sources/Spells/" + fileName + ".json")
+  fetch("http://localhost:8080/Sources/ArcaneSpells/" + fileName + ".json")
     .then(function (urlOUTPUT) {
       return urlOUTPUT.text();
     })

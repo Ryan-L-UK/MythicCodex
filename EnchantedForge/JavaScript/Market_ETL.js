@@ -10,7 +10,6 @@ fetch("http://localhost:8080/sources/BlackMarket/")
     myTable.setAttribute("id", "myTable");
     //-----------------------
     const tblHead = document.createElement("thead");
-
     const tblRow = document.createElement("tr");
     //-----------------------
     const tblImage = document.createElement("th");

@@ -1,0 +1,269 @@
+/*-----------------------------------------------------------*/
+/*Menu Bar*/
+/*-----------------------------------------------------------*/
+.menuBackgroundColour {
+  background-image: url(http://localhost:8080/EnchantedForge/ImageAssets/ListFrame/gui_bkg.png);
+  background-color: #050a09;
+  height: fit-content;
+  width: 100%;
+  background-position: top;
+  background-repeat: repeat;
+}
+.menuBackgroundLine {
+  height: 2px;
+  background-color: rgb(80, 80, 80);
+  box-shadow: 0 -1px 0 rgb(100, 100, 100), 0 1px 0 rgb(60, 60, 60);
+}
+.menuCoreContainer {
+  width: 1400px;
+  height: 60px;
+  align-items: center;
+  justify-content: left;
+  margin: auto;
+  display: flex;
+  position: relative;
+  z-index: 99 !important;
+  padding-left: 30px;
+}
+.menuHomeIcon {
+  width: auto;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-items: center;
+}
+.menuHomeIcon:hover {
+  background-image: radial-gradient(
+    circle,
+    rgb(172, 13, 13) 20%,
+    rgba(9, 8, 9, 0) 70%
+  );
+}
+.menuItemContainer {
+  font-family: CinzelDecorative;
+  text-transform: uppercase;
+  margin: 0 auto 0;
+  padding: 0 0 0 40px;
+  width: 100%;
+}
+.menubar a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+.menudiv {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  align-self: center;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.dropDownItem {
+  float: left;
+  overflow: hidden;
+}
+.dropbtn {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 20px 8px;
+}
+.dropbtn::after {
+  align-items: center;
+  justify-items: center;
+  content: "\25c8";
+  transform: rotate(180deg);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 19px;
+  margin-left: 4px;
+  margin-right: 7px;
+  margin-top: -2px;
+  color: rgb(255, 252, 239);
+}
+.dropDownItem .dropbtn {
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background-color: inherit;
+  font-family: inherit;
+  text-shadow: none;
+  color: rgb(255, 252, 239);
+  transition: text-shadow 0.15s ease-in-out;
+}
+
+.dropContainerTop {
+  transform: rotate(180deg);
+  height: 15px;
+  background-image: url(http://localhost:8080/EnchantedForge/ImageAssets/ListFrame/gui_window-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 8px;
+}
+
+.dropContainerMiddle {
+  min-height: 220;
+  font-weight: bold;
+  color: #f1f1f1;
+  padding: 0px 25px 10px 25px;
+  background-image: url(http://localhost:8080/EnchantedForge/ImageAssets/ListFrame/gui_window-middle.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.dropContainerBtm {
+  height: 15px;
+  background-image: url(http://localhost:8080/EnchantedForge/ImageAssets/ListFrame/gui_window-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 8px;
+}
+
+.dropdown-content {
+  justify-items: center;
+  display: none;
+  position: absolute;
+  background-image: url(http://localhost:8080/EnchantedForge/ImageAssets/ListFrame/gui_bkg.png);
+  min-width: 300px;
+  overflow: visible;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1 !important;
+  font-family: Roboto-Medium;
+  font-size: 1rem;
+}
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 252, 239);
+  padding: 5px 2px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropDownItem .dropbtn:hover,
+.dropdown-content a:hover,
+.stdbtn:hover {
+  text-shadow: 0 0 20px rgb(172, 13, 13);
+}
+.show {
+  display: block;
+}
+
+.stdbtn {
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: inherit;
+  font-family: inherit;
+  text-shadow: none;
+  transition: text-shadow 0.15s ease-in-out;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 25px 8px;
+}
+
+/*-----------------------------------------------------------*/
+/*Footer*/
+/*-----------------------------------------------------------*/
+.footerbox {
+  width: 100%;
+  height: auto;
+  background-image: radial-gradient(circle at top center, #082c25, #050a09);
+  background-size: cover;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.footerbase {
+  background-color: #051c0d;
+  background-size: cover;
+  color: #9b9aa7;
+}
+.iconlogo {
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.pinkline {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1.5px solid #08bd78;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.footer-container {
+  display: grid;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  column-gap: 1%;
+  grid-auto-flow: row;
+  grid-template-columns: 60% 30%;
+  grid-template-areas: "footerlinks footerlogo";
+}
+.footer-links-container {
+  display: grid;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  column-gap: 1%;
+  grid-auto-flow: row;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-areas: "linksleft linkscentre linksright";
+}
+.footerlinks,
+.footerlogo,
+.linkscentre,
+.linksleft,
+.linksright {
+  text-align: center;
+  align-items: center;
+}
+li.footer,
+ul.footer {
+  text-align: left;
+  align-items: left;
+  font-size: 1rem;
+  font-family: Tiamat-Text;
+  margin: 0 auto 8px;
+}
+ul.footer {
+  list-style: none;
+  list-style-image: none;
+}
+li.heading {
+  font-size: 1rem;
+  padding-bottom: 8px;
+  font-family: Tiamat-Text;
+}
+.ftrlink {
+  color: #fff;
+  text-decoration: none;
+}
+.ftrlink:hover,
+li.heading,
+p.footer {
+  color: #9b9aa7;
+}
+p.footer {
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Tiamat-Text;
+  margin: 0 auto;
+}

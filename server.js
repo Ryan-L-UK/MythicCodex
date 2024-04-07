@@ -100,7 +100,7 @@ app.post("/sources/:sourceType/buy/:itemName", express.json(), (req, res) => {
 });
 
 app.post("/generate-items", (req, res) => {
-  const blackMarketPath = "/Sources/BlackMarket";
+  const blackMarketPath = "/Sources/TheGulletAdventures/BlackMarket";
 
   // Read all JSON files in the BlackMarket folder
   fs.readdir(__dirname + blackMarketPath, (err, data) => {

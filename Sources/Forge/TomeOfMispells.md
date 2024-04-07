@@ -2,7 +2,7 @@
 
 This magical tome appears to contain several spell scrolls. Each scroll can be used once per day, and regenerates daily at dawn. In reality, the spells are inscribed wrong, and their effects vary wildly from the intended. When one of these scrolls are used the DM reveals the spell's true effect.
 
-![Tome Of Mispells](../../Foundry/ImageAssets/PageAssets/TomeOfMispells1.jpg)
+![Tome Of Mispells](http://localhost:8080/Sources/Forge/ImgAssets/TomeOfMispells1.jpg)
 
 ## Spells
 

@@ -82,7 +82,7 @@ function checkproperties(property) {
 }
 // ---------------------------------------------------------------------------------------------------------
 //ITEM LIST
-fetch("http://localhost:8080/sources/MagicItems/")
+fetch("http://localhost:8080/Sources/CuriousItems/")
   .then((response) => response.json())
   .then((data) => {
     //-----------------------
@@ -262,7 +262,7 @@ function fetchData(fileName) {
   );
   document.getElementById("itemform").reset();
   console.warn("Cleric: Casting Prestidigitation On Form...");
-  fetch("http://localhost:8080/Sources/MagicItems/" + fileName + ".json")
+  fetch("http://localhost:8080/Sources/CuriousItems/" + fileName + ".json")
     .then(function (urlOUTPUT) {
       return urlOUTPUT.text();
     })

@@ -14,7 +14,7 @@ Any abilities obtained before the transition will remain, but the ability to cla
 
 The carrier also gains a modified bite ability. If the user attempts to bite a target they deal 1d8 + Dex, +1d8 necrotic with half the total damage returned as 'Life Leach'.
 
-![The Crimson Alter](../../Foundry/ImageAssets/PageAssets/CrimsonStone1.png)
+![The Crimson Alter](http://localhost:8080/Sources/Forge/ImgAssets/CrimsonStone1.png)
 
 # Blood Bound Sorcerer
 
@@ -77,12 +77,12 @@ Whenever you gain a sorcerer level, you can replace one spell you gained from th
 
 ### Blood Spells
 
-| Sorcerer Level | Spell                                                                           |
-| :------------: | :------------------------------------------------------------------------------ |
-|      1st       | _[False Life](http://localhost:8080/Sources/Spells/False%20Life.png)_           |
-|      3rd       | _[Hold Person](http://localhost:8080/Sources/Spells/Hold%20Person.png)_         |
-|      5th       | _[Vampiric Touch](http://localhost:8080/Sources/Spells/Vampiric%20Touch.png)_   |
-|      7th       | _[Blight](http://localhost:8080/Sources/Spells/Blight.png)_                     |
-|      9th       | _[Dominate Person](http://localhost:8080/Sources/Spells/Dominate%20Person.png)_ |
+| Sorcerer Level | Spell                                                                                 |
+| :------------: | :------------------------------------------------------------------------------------ |
+|      1st       | _[False Life](http://localhost:8080/Sources/ArcaneSpells/False%20Life.png)_           |
+|      3rd       | _[Hold Person](http://localhost:8080/Sources/ArcaneSpells/Hold%20Person.png)_         |
+|      5th       | _[Vampiric Touch](http://localhost:8080/Sources/ArcaneSpells/Vampiric%20Touch.png)_   |
+|      7th       | _[Blight](http://localhost:8080/Sources/ArcaneSpells/Blight.png)_                     |
+|      9th       | _[Dominate Person](http://localhost:8080/Sources/ArcaneSpells/Dominate%20Person.png)_ |
 
-![Blood Bound Sorcerer](../../Foundry/ImageAssets/PageAssets/CrimsonStone2.png)
+![Blood Bound Sorcerer](http://localhost:8080/Sources/Forge/ImgAssets/CrimsonStone2.png)

@@ -4,7 +4,7 @@ This bag has an interior space considerably larger than its outside dimensions, 
 
 If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. Unforuntately the magic on this bag is failing, and any attempt to put an item in the bag fails. However violently shaking the bag seems to cause various items to fall out of it.
 
-![The Jesters Bag Of Holding](../../Foundry/ImageAssets/PageAssets/JestersBagOfHolding.png)
+![The Jesters Bag Of Holding](http://localhost:8080/Sources/Forge/ImgAssets/JestersBagOfHolding.png)
 
 ## Random Table
 
